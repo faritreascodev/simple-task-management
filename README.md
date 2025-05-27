@@ -53,12 +53,6 @@ npx shadcn@latest init --force
 npx shadcn@latest add button input card dialog select checkbox badge alert label textarea
 
 - Local:        http://localhost:3000
-- Network:      http://192.168.x.x:3000
-
-![Gestor de Tareas](https://img.shields.io/badge/React-18+-blue.svg)
-![Next.js](https://img.shields.io/badge/Next.js-15+-black.svg)
-![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue.svg)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3+-38B2AC.svg)
 
 ## 🚀 Características Principales
 
@@ -104,34 +98,18 @@ npx shadcn@latest add button input card dialog select checkbox badge alert label
 
 ### Pasos de instalación
 
-1. **Clonar o descargar el proyecto**
-\`\`\`bash
-# Si usaste el comando de shadcn
-npx shadcn@latest add "https://v0.dev/chat/..."
-
-# O si tienes el código fuente
+# si tienes el código fuente
 git clone <repository-url>
 cd gestor-tareas
-\`\`\`
 
 2. **Instalar dependencias**
-\`\`\`bash
 npm install
-# o
-yarn install
-\`\`\`
 
 3. **Ejecutar en modo desarrollo**
-\`\`\`bash
 npm run dev
-# o
-yarn dev
-\`\`\`
 
 4. **Abrir en el navegador**
-\`\`\`
 http://localhost:3000
-\`\`\`
 
 ## 🎮 Uso de la Aplicación
 
@@ -174,40 +152,6 @@ http://localhost:3000
 - **Recordatorios importantes**: No olvides fechas clave
 - **Planificación diaria**: Estructura tu día a día
 
-## 🔧 Estructura del Proyecto
-
-\`\`\`
-gestor-tareas/
-├── app/
-│   ├── page.tsx              # Componente principal de la aplicación
-│   ├── layout.tsx            # Layout base de Next.js
-│   ├── globals.css           # Estilos globales con Tailwind
-│   └── loading.tsx           # Componente de carga
-├── components/
-│   └── ui/                   # Componentes de shadcn/ui
-│       ├── button.tsx
-│       ├── input.tsx
-│       ├── card.tsx
-│       ├── dialog.tsx
-│       ├── select.tsx
-│       ├── checkbox.tsx
-│       ├── badge.tsx
-│       ├── alert.tsx
-│       ├── label.tsx
-│       └── textarea.tsx
-├── hooks/
-│   └── use-toast.ts          # Hook personalizado para notificaciones
-├── lib/
-│   └── utils.ts              # Utilidades y helpers
-├── README.md                 # Documentación del proyecto
-├── package.json              # Dependencias y scripts
-├── tailwind.config.ts        # Configuración de Tailwind CSS
-├── tsconfig.json             # Configuración de TypeScript
-└── next.config.mjs           # Configuración de Next.js
-\`\`\`
-
-## 🧪 Testing y Calidad
-
 ### Scripts Disponibles
 \`\`\`bash
 # Desarrollo
@@ -215,12 +159,6 @@ npm run dev          # Servidor de desarrollo
 npm run build        # Construir para producción
 npm run start        # Ejecutar versión de producción
 npm run lint         # Verificar código con ESLint
-
-# Testing (si se implementa)
-npm test             # Ejecutar pruebas
-npm run test:watch   # Pruebas en modo watch
-npm run test:coverage # Cobertura de pruebas
-\`\`\`
 
 ### Validaciones Implementadas
 - **Título obligatorio**: No se pueden crear tareas sin título
@@ -236,47 +174,5 @@ npm run test:coverage # Cobertura de pruebas
 - **Privacidad total**: Tus tareas permanecen en tu dispositivo
 - **Backup manual**: Puedes exportar/importar datos si es necesario
 
-### Compatibilidad de Navegadores
-- ✅ Chrome 90+
-- ✅ Firefox 88+
-- ✅ Safari 14+
-- ✅ Edge 90+
-
-## 🚀 Deployment
-
-### Vercel (Recomendado)
-\`\`\`bash
-# Instalar Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-
-# Build command
-npm run build
-
-### Otros Proveedores
-La aplicación es compatible con cualquier proveedor que soporte Next.js estático.
-
-## 🔮 Roadmap y Mejoras Futuras
-
-### Versión 2.0 (Planificada)
-- [ ] **Autenticación de usuarios** con NextAuth.js
-- [ ] **Sincronización en la nube** con base de datos
-- [ ] **Modo oscuro/claro** toggle
-- [ ] **Exportación de datos** a PDF/CSV
-- [ ] **Notificaciones push** para recordatorios
-- [ ] **Colaboración** en tareas compartidas
-- [ ] **Aplicación móvil** (PWA)
-- [ ] **Integración con calendarios** (Google Calendar, Outlook)
-
-### Mejoras de UX
-- [ ] **Drag & drop** para reordenar tareas
-- [ ] **Atajos de teclado** para acciones rápidas
-- [ ] **Temas personalizables** 
-- [ ] **Widgets de escritorio**
-- [ ] **Modo offline** completo
-
----
 
 *Hecho con React, Next.js y mucho café xd ☕*
